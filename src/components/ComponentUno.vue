@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col justify-center text-center text-5xl mt-4">
+  <div class="flex flex-col justify-center text-center h-screen text-5xl">
     <!-- Data binding: status variable is bound to text content -->
     <h1 class="font-bold font-sans">MICROSOFT HIRE ME</h1>
-    <div class="flex flex-row justify-center text-center text-4xl">
+    <div class="flex flex-col justify-center text-center text-4xl sm:flex-row">
       <h2>BECAUSE &nbsp;</h2>
       <!-- Double mustache variable rendering (or squigly brackets): rendering the status variable -->
       <h2 class="text-green-600">{{ status }}</h2>
