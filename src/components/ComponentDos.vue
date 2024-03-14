@@ -1,11 +1,11 @@
 <template>
   <!-- v-bind attribute: dynamically bind class based on darkMode -->
-  <nav :class="{ 'bg-gray-800 text-white': darkMode, 'bg-white text-gray-800': !darkMode }" class="flex justify-between items-center py-4 px-6">
+  <nav :class="{ 'bg-gray-800 text-white': darkMode, 'bg-slate-200 text-gray-800': !darkMode }" class="flex justify-between items-center py-4 px-6">
     <!-- Logo -->
     <div class="flex items-center">
       <!-- Props and Slots: Slot for logo -->
       <slot name="logo">
-        <h1 class="text-xl font-bold">Logo</h1>
+        <h1 class="text-xl font-bold">Hendrich B&#252;hrer</h1>
       </slot>
     </div>
 
