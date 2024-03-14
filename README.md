@@ -1,29 +1,30 @@
-# CPNT262-Mini-Activity-4
+# CPNT262
 
-This template should help get you started developing with Vue 3 in Vite.
+## Activity Name
+- Mini Activity 4 - Framework Reactivity
 
-## Recommended IDE Setup
+## Author
+- Hendrich Buhrer
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Component 1: Navigation Bar
 
-## Customize configuration
+### Description:
+This component represents a navigation bar with a dark mode toggle button.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+### Features:
+- Data binding: The navigation bar class is dynamically bound based on the darkMode variable.
+- Conditional Example: It conditionally renders different SVG icons based on darkMode.
+- Slots: It accepts one slot for the logo.
+- Events: Clicking on the toggle button triggers the toggleDarkMode function and emits a custom event when dark mode is toggled.
+- Reactivity: The darkMode variable is created using ref() to make it reactive.
 
-## Project Setup
+## Component 2: Status Display
 
-```sh
-npm install
-```
+### Description:
+This component displays a word dynamically with a rotating effect (Goes through a list of pre-selected words).
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+### Features:
+- Data binding: The status variable is bound to the text content.
+- Double mustache variable rendering: It renders the status variable.
+- Props and Slots: It utilizes one slot for rendering dynamic content.
+- Reactivity: Reactive variables are used for statuses, currentIndex, and status.
